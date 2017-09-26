@@ -90,6 +90,7 @@ describe "Student" do
       josh.save
       josh_id = josh.id
       josh_from_db = Student.find_by_name("Josh")
+      #binding.pry
       expect(josh_from_db.name).to eq("Josh")
       expect(josh_from_db.grade).to eq("9th")
       expect(josh_from_db.id).to eq(josh_id)
